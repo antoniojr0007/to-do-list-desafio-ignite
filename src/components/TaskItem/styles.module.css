@@ -1,0 +1,72 @@
+.taskItemContainer{
+  height: 4.5rem;
+}
+
+.TaskItemBody{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 0.125rem solid var(--gray400);
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.TaskItemCheckBox{
+  display: flex;
+  width: 1.5rem; 
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--blue500);
+  border-radius: 0.5rem;
+  border: 0.125rem solid transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.TaskItemText{
+  width: 39.5rem;
+  color: var(--gray100);
+  font-size: var(--fontRegular); 
+  padding: 0 1rem;
+}
+
+.TaskItemButton{
+  display: flex;
+  width: 1.5rem; 
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--gray100);
+  border-radius: 0.5rem;
+  border: 0.125rem solid transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.TaskItemButton:hover {
+  color: var(--danger);
+}
+
+
+.TaskItemCheckBoxFalse{
+  display: flex;
+  width: 1.5rem; 
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--purple500);
+  border-radius: 0.5rem;
+  border: 0.125rem solid transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.TaskItemTextFalse{
+  width: 39.5rem;
+  color: var(--gray300);
+  font-size: var(--fontRegular); 
+  padding: 0 1rem;
+  text-decoration-line: line-through;
+}
