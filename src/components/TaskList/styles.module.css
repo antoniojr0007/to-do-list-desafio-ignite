@@ -1,0 +1,158 @@
+.newTaskContainer{
+  padding: 0;
+  gap: 0.5rem;
+  margin-top: -1.75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.newTaskInput{
+  width: 37.875rem; 
+  height: 3.5rem;
+  padding: 1rem;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0.125rem solid var(--gray700);
+  align-items: center;
+  color: var(--gray200);
+  background: var(--gray500);
+}
+
+.newTaskButton{
+  display: flex;
+  width: 5.625rem; 
+  height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--gray100);
+  border-radius: 0.5rem;
+  border: 0.125rem solid transparent;
+  background: var(--blue500);
+}
+
+.taskListMain{
+  width: 44rem;
+  height: 22rem;
+  padding: 0;
+  gap: 0.5rem;
+  margin: 0 auto;
+  margin-top: 4.5rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.TasksInfo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.strongCreated {
+  color: var(--blue500);
+  weight: var(--fontBold);
+  line-height: var(--lineHeight);
+}
+
+.tasksNumbers  {
+  color: var(--gray200);
+  font-weight: var(--fontBold);
+  border-radius: 0.75rem;
+  padding: 0.125rem 0.5rem;
+  gap: 0.625rem;
+  background: var(--gray400);
+  margin-left: 0.5rem;
+}
+
+.completedStrong{
+  color: var(--purple500);
+  weight: var(--fontBold);
+  line-height: var(--lineHeight);
+}
+
+.taskListUl{
+  list-style: none;
+}
+
+.taskListLi{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--gray100);
+  padding: 1rem 0;
+}
+
+.TaskItemBody{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 0.125rem solid var(--gray400);
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.TaskItemCheckBox{
+  display: flex;
+  width: 1.5rem; 
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--blue500);
+  border-radius: 0.5rem;
+  border: 0.125rem solid transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.TaskItemText{
+  width: 39.5rem;
+  color: var(--gray100);
+  font-size: var(--fontRegular); 
+  padding: 0 1rem;
+}
+
+.TaskItemButton{
+  display: flex;
+  width: 1.5rem; 
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--gray100);
+  border-radius: 0.5rem;
+  border: 0.125rem solid transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.TaskItemButton:hover {
+  color: var(--danger);
+}
+
+
+.TaskItemCheckBoxFalse{
+  display: flex;
+  width: 1.5rem; 
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--purple500);
+  border-radius: 0.5rem;
+  border: 0.125rem solid transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.TaskItemTextFalse{
+  width: 39.5rem;
+  color: var(--gray300);
+  font-size: var(--fontRegular); 
+  padding: 0 1rem;
+  text-decoration-line: line-through;
+}

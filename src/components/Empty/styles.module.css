@@ -1,0 +1,26 @@
+.tasksList{
+  border-top: 0.0625rem solid var(--gray400);
+  border-radius: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.tasksIcon{
+  margin-top: 4rem;
+}
+
+.tasksText{
+  text-align: center;
+  color: var(--gray300);
+} 
+
+.tasksTextP{
+  color: var(--gray300);
+  font-weight: var(--fontBold);
+  line-height:var(--lineHeight);
+}
+
+.tasksTextS{
+  color: var(--gray300);
+  font-weight: var(--fontRegular);
+  line-height:var(--lineHeight);
+}
