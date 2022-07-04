@@ -1,11 +1,11 @@
 import { CheckCircle, Circle, PlusCircle, Trash } from 'phosphor-react';
-import {useEffect, useState } from 'react';
+import {useEffect, useState, FormEvent } from 'react';
 import styles from './styles.module.css';
 import { v4 as uuid } from 'uuid';
 import Empty from '../Empty';
 
 interface Task {
-  id: number;
+  id: string;
   title: string;
   isComplete: boolean;
 }
@@ -18,22 +18,21 @@ export function TaskList(){
 
   const tasksNumbers = tasks.length;
   
-  function handleCreateNewTask() {
+  function handleCreateNewTask(event: FormEvent) {
     if (newTask !== "") {
       event.preventDefault();
-      const listTasks = [...tasks];
-      const task = {
+      
+      setTasks([...tasks, {
         id: uuid(),
         title: newTask,
         isComplete: false,
-      };
-      listTasks.push(task);
-      setTasks(listTasks);
+      }]);
+     
       setNewTask("")
     }
   }
 
-  function handleToggleTaskCompletion(id: number) {
+  function handleToggleTaskCompletion(id: string) {
     const listTask = tasks.filter((task) => {
       if (task.id === id) {
         task.isComplete = !task.isComplete
@@ -43,7 +42,7 @@ export function TaskList(){
     setTasks(listTask)
   }
 
-  function handleRemoveTask(id: number) {
+  function handleRemoveTask(id: string) {
     const newListTasks = tasks.filter(task => task.id !== id);
     setTasks(newListTasks);
   }
