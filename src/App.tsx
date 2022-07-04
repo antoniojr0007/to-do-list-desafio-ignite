@@ -8,11 +8,15 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div>
-      <Header />
+      <header>
+        <Header />
+      </header>
       <div className={styles.appWrapper}>
         <TaskList />
       </div>
+      <footer>
         <Footer />
+      </footer>
     </div>
   )
 }

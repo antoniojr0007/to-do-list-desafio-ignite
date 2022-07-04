@@ -1,3 +1,8 @@
 .appWrapper{
   min-height: 70vh;
+  z-index: 1;
+  
+}
+footer{
+  min-height: 15vh;
 }

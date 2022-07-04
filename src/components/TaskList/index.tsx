@@ -4,6 +4,7 @@ import styles from './styles.module.css';
 import { v4 as uuid } from 'uuid';
 import Empty from '../Empty';
 
+
 interface Task {
   id: string;
   title: string;
@@ -53,6 +54,7 @@ export function TaskList(){
   }, [handleToggleTaskCompletion])
 
   return(
+    <div className={styles.container}>
     <section className={styles.taskListContainer}>
       <form onSubmit={() =>{}} className={styles.newTaskContainer}>
         <input className={styles.newTaskInput} 
@@ -115,8 +117,7 @@ export function TaskList(){
        }
       </main>
     </section>
-    
-    
+    </div>
   )
 }
 
