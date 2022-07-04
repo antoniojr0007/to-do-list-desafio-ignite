@@ -1,0 +1,37 @@
+.footerContainer{
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footerHeader{
+  display: flex;
+  align-items: center;
+}
+
+.footerLogo{
+  padding: 0.5rem;
+}
+.footerP{
+  color: var(--gray100);
+  padding: 0.5rem;
+}
+
+.footerLink{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 0.5rem;
+
+}
+
+.footerA{
+  color: var(--gray100);
+  padding: 0.5rem;
+  text-decoration: none;
+  border-bottom: 0.125rem solid transparent;
+  transition: 0.5s ease;
+}
+.footerA:hover{
+  border-color: var(--purple500);
+}
